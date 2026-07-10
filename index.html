@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wedding Invitation: Naveekumar & Keerthana. Join us in celebrating our love story on August 30, 2026.">
+    <title>Naveekumar & Keerthana - Wedding Invitation</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="preloader" class="preloader" role="dialog" aria-label="Loading Invitation">
+        <div class="loader-content">
+            <div class="glow-ring"></div>
+            <div class="loader-percentage" id="loader-percentage">0%</div>
+        </div>
+    </div>
+
+    <button id="audio-control" class="audio-control" aria-label="Toggle Background Music">
+        <span class="audio-icon-wrapper">
+            <svg class="audio-icon play-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+            </svg>
+            <svg class="audio-icon pause-icon hidden" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6 19h4V5h4v14h4V5H6z"/>
+            </svg>
+        </span>
+        <span class="audio-text">Play Music</span>
+    </button>
+
+    <audio id="wedding-bg-music" loop preload="auto">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <canvas id="cinematic-canvas" class="cinematic-canvas"></canvas>
+
+    <main class="smooth-scroll-container">
+
+        <section id="hero" class="hero-section" aria-label="Welcome">
+            <div class="hero-bg-overlay"></div>
+            <div class="fog-layer"></div>
+            
+            <div class="hero-content">
+                <span class="script-text animate-item fade-blur-up">We Do</span>
+                <p class="sub-heading animate-item fade-blur-up" style="animation-delay: 0.3s;">Together with our families</p>
+                
+                <h1 class="couple-names animate-item fade-blur-up" style="animation-delay: 0.6s;">
+                    Naveekumar <br><span class="ampersand">&</span><br> Keerthana
+                </h1>
+                
+                <p class="invitation-phrase animate-item fade-blur-up" style="animation-delay: 0.9s;">
+                    Invite You To Our <br><span class="highlight">Wedding Reception Celebration</span>
+                </p>
+                
+                <div class="hero-date-grid animate-item fade-blur-up" style="animation-delay: 1.2s;">
+                    <div class="date-side">Sunday</div>
+                    <div class="date-main">
+                        <span class="day">30</span>
+                        <span class="month-year">August 2026</span>
+                    </div>
+                    <div class="date-side">6:30 PM</div>
+                </div>
+
+                <button id="scroll-trigger" class="btn-luxury animate-item fade-blur-up" style="animation-delay: 1.5s;" aria-label="Scroll to Begin">
+                    <span>Scroll to Begin</span>
+                    <svg class="bouncing-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M19 12l-7 7-7-7"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <section id="countdown-section" class="scroll-animate-section" aria-label="Countdown">
+            <div class="section-container">
+                <h2 class="section-title split-words-target">The Countdown To Forever Has Begun</h2>
+                <div class="countdown-wrapper">
+                    <div class="countdown-card">
+                        <span class="count-num" id="days">00</span>
+                        <span class="count-label">Days</span>
+                    </div>
+                    <div class="countdown-card">
+                        <span class="count-num" id="hours">00</span>
+                        <span class="count-label">Hours</span>
+                    </div>
+                    <div class="countdown-card">
+                        <span class="count-num" id="minutes">00</span>
+                        <span class="count-label">Minutes</span>
+                    </div>
+                    <div class="countdown-card">
+                        <span class="count-num" id="seconds">00</span>
+                        <span class="count-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rings-section" class="scroll-animate-section" aria-label="Celebration Note">
+            <div class="section-container geometry-container">
+                <div class="rings-wrapper">
+                    <div class="ring gold-ring-1"></div>
+                    <div class="ring gold-ring-2"></div>
+                </div>
+                <div class="handwriting-wrapper">
+                    <svg class="handwriting-svg" viewBox="0 0 600 150" aria-label="We can't wait to celebrate with you!">
+                        <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" class="handwriting-text">
+                            We can't wait to celebrate with you!
+                        </text>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+       <!-- ==========================================================================
+           SECTION 4: VENUE DESIGN
+           ========================================================================== -->
+        <section id="venue-section" class="scroll-animate-section" aria-label="Venue Map">
+            <div class="section-container">
+                <div class="luxury-card venue-card">
+                    <div class="card-border-glow"></div>
+                    <div class="venue-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 21s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 7.2c0 7.3-8 11.8-8 11.8z"/>
+                            <circle cx="12" cy="9" r="3"/>
+                        </svg>
+                    </div>
+                    <h2 class="card-title">Venue Location</h2>
+                    <p class="venue-name">Sri Sairam Mahal</p>
+                    <p class="venue-city">Mettupalayam</p>
+                    
+                    <a href="https://maps.app.goo.gl/BW815K9z21JzwEPB9" target="_blank" rel="noopener noreferrer" class="btn-luxury ripple-btn" aria-label="Open location in Google Maps">
+                        <span>Open in Google Maps</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline-section" class="scroll-animate-section" aria-label="Event Timeline">
+            <div class="section-container">
+                <h2 class="section-title">Program Timeline</h2>
+                <div class="vertical-timeline">
+                    
+                    <div class="timeline-item left-item">
+                        <div class="timeline-dot">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+                        </div>
+                        <div class="timeline-content luxury-card">
+                            <div class="time-stamp">6:30 PM &darr; 9:30 PM</div>
+                            <h3>Reception</h3>
+                            <p>Celebration, Banquet & Music</p>
+                            <span class="venue-tag">Sri Sairam Mahal, Mettupalayam</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right-item">
+                        <div class="timeline-dot">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        </div>
+                        <div class="timeline-content luxury-card">
+                            <div class="time-stamp">4:00 AM &darr; 5:30 AM</div>
+                            <h3>Wedding Muhurtham</h3>
+                            <p>Traditional Auspicious Ceremony</p>
+                            <span class="venue-tag address-detail">Kumarankundru - Sri Kalyana Subramaniyaswamy Temple, Mettupalayam</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="thank-you-section" class="scroll-animate-section final-section" aria-label="Thank You">
+            <div class="section-container">
+                <div class="heart-container">
+                    <div class="glowing-heart"></div>
+                </div>
+                <h2 class="script-text final-thank-title">Thank You</h2>
+                <p class="final-message">We can't wait to celebrate this beautiful beginning with you.</p>
+                
+                <div class="save-the-date-footer">
+                    <span class="std-label">SAVE THE DATE</span>
+                    <span class="std-date">30 AUGUST 2026</span>
+                </div>
+                <div class="gold-finish-line"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
