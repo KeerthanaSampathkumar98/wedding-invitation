@@ -851,70 +851,37 @@ body {
     width: 80px;
     height: 80px;
     margin: 0 auto 30px;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .glowing-heart {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: #bd081c;
-    top: 20px; 
-    left: 20px;
-    transform: rotate(-45deg);
-    box-shadow: 
-        -3px 3px 10px rgba(0, 0, 0, 0.8), 
-        0 0 20px rgba(212, 175, 55, 0.6),
-        0 0 40px rgba(243, 229, 171, 0.4);
+    width: 55px;
+    height: 55px;
+    fill: #bd081c; 
+    filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.6)) 
+            drop-shadow(0 0 20px rgba(243, 229, 171, 0.3));
     animation: heartPopOutGold 1.2s infinite cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-.glowing-heart::before, .glowing-heart::after {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: #bd081c;
-    border-radius: 50%;
-}
-
-.glowing-heart::before { 
-    top: -20px; 
-    left: 0; 
-    box-shadow: -3px 0 5px rgba(0, 0, 0, 0.2);
-}
-
-.glowing-heart::after { 
-    left: 20px; 
-    top: 0; 
-    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes heartPopOutGold {
     0% { 
-        transform: scale(1) rotate(-45deg); 
-        box-shadow: 
-            -3px 3px 10px rgba(0, 0, 0, 0.8), 
-            0 0 20px rgba(212, 175, 55, 0.5);
+        transform: scale(1); 
+        filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.5));
     }
     30% { 
-        transform: scale(1.25) rotate(-45deg);
-        box-shadow: 
-            -12px 12px 25px rgba(0, 0, 0, 0.9),
-            0 0 35px rgba(212, 175, 55, 0.9),  
-            0 0 60px rgba(243, 229, 171, 0.6);
+        transform: scale(1.22);
+        filter: drop-shadow(0 0 18px rgba(212, 175, 55, 0.85))  
+               drop-shadow(0 0 30px rgba(243, 229, 171, 0.5));
     }
     55% {
-        transform: scale(1.08) rotate(-45deg);
-        box-shadow: 
-            -6px 6px 15px rgba(0, 0, 0, 0.84), 
-            0 0 25px rgba(212, 175, 55, 0.7);
+        transform: scale(1.06);
+        filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.65));
     }
     100% { 
-        transform: scale(1) rotate(-45deg); 
-        box-shadow: 
-            -3px 3px 10px rgba(0, 0, 0, 0.8), 
-            0 0 20px rgba(212, 175, 55, 0.5);
+        transform: scale(1); 
+        filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.5));
     }
 }
 
